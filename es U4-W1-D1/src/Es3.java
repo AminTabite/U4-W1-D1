@@ -25,8 +25,11 @@ public class Es3 {
         double lt1 = scanner.nextDouble();
         System.out.println("Inserire il secondo lato");
         double lt2 = scanner.nextDouble();
+        System.out.println("Inserire il terzo lato");
+        double lt3 = scanner.nextDouble();
 
-        double Perimetro = PerimetroT(lt1, lt2);
+        double Area = AreaT(lt1, lt2, lt3);
+
 
     }
 
@@ -47,9 +50,11 @@ public class Es3 {
 
     }
 
-    public static double PerimetroT(double lt1, double lt2) {
-
-        
+    public static double AreaT(double lt1, double lt2, double lt3) {
+        double P = (lt1 + lt2 + lt3) / 2;
+        double A = Math.sqrt((P * (P - lt1) * (P - lt2) * (P - lt3)));
+        System.out.println("l area del triangolo e'" + " " + A);
+        return A;
     }
 
 }
