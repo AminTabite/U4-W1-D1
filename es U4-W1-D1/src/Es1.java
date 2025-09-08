@@ -21,9 +21,4 @@ public class Es1 {
     }
 
 
-    public static 
-
-
-
-
 }
